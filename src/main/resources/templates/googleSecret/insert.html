@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html  xmlns:th="http://www.thymeleaf.org">
+<head lang="en">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <title th:text="${title}">Google身份认证管理界面</title>
+</head>
+<body>
+<h1>账号信息</h1>
+
+<!-- 表单提交用户信息,注意字段的设置,直接是*{} -->
+<form action="#" th:action="@{/insert}" th:object="${googleSecret}" method="post">
+    <div class="inputbox">
+        <label for="issuer">应用名称：</label>
+        <input type="text" th:field="*{issuer}" />
+    </div>
+    <div class="inputbox">
+        <label for="account">账号：</label>
+        <input type="text" th:field="*{account}" />
+    </div>
+    <div class="subBtn">
+        <input type="submit" value="提交"/>
+        <input type="reset" value="重置"/>
+    </div>
+</form>
+
+</body>
+</html>

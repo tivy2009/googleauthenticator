@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html  xmlns:th="http://www.thymeleaf.org">
+<head lang="en">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <title th:text="${title}">Google身份认证管理界面</title>
+</head>
+<body>
+<h1>Qr二维码</h1>
+
+<div th:object="${googleSecret}">
+    <p>Account:<span th:text="*{account}"></span></p>
+    <p>Issuer:<span th:text="*{issuer}"></span></p>
+    <p>Status:<span th:text="*{status}"></span></p>
+    <p>CreateTime:<span th:text="*{#dates.format(createtime,'yyyy-MM-dd HH:mm:ss')}"></span></p>
+    <p>UpdateTime:<span th:text="*{#dates.format(updatetime,'yyyy-MM-dd HH:mm:ss')}"></span></p>
+    <p>SecretCode:<span th:text="*{secret}"></span></p>
+</div>
+<div>
+    请在手机上打开Google身份验证器，扫描下方二维码设置账号。(您也可以手工输入Account和SecretCode设置账号)。<br/>
+    账号设置成功后，在Google身份验证器界面中将显示一个6为数字的验证码，将该数字输入Web界面的验证码输入框中进行验证即可。<br/>
+    若手机上未安装Google身份验证器，请自行百度或Goole手机应用商店或苹果手机应用商店进行下载并安装。
+</div>
+<div style="width:300px;height:300px;line-height:300px;">
+    <img th:src="@{/qrCodeImg/{id}(id=${googleSecret.id})}">
+</div>
+
+</body>
+</html>
