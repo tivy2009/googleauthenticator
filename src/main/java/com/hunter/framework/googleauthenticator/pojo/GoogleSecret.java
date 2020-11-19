@@ -1,4 +1,4 @@
-package com.phy.framework.googleauthenticator.pojo;
+package com.hunter.framework.googleauthenticator.pojo;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
 

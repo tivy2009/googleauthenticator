@@ -1,10 +1,10 @@
-package com.phy.framework.googleauthenticator.controller;
+package com.hunter.framework.googleauthenticator.controller;
 
 import com.google.zxing.WriterException;
-import com.phy.framework.googleauthenticator.authenticator.GoogleAuthenticator;
-import com.phy.framework.googleauthenticator.authenticator.QRCodeUtil;
-import com.phy.framework.googleauthenticator.pojo.GoogleSecret;
-import com.phy.framework.googleauthenticator.service.GoogleSecretService;
+import com.hunter.framework.googleauthenticator.authenticator.GoogleAuthenticator;
+import com.hunter.framework.googleauthenticator.pojo.GoogleSecret;
+import com.hunter.framework.googleauthenticator.service.GoogleSecretService;
+import com.hunter.framework.googleauthenticator.authenticator.QRCodeUtil;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.*;

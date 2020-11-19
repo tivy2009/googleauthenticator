@@ -1,6 +1,6 @@
-package com.phy.framework.googleauthenticator.mapper;
+package com.hunter.framework.googleauthenticator.mapper;
 
-import com.phy.framework.googleauthenticator.pojo.GoogleSecret;
+import com.hunter.framework.googleauthenticator.pojo.GoogleSecret;
 import org.apache.ibatis.annotations.Mapper;
 
 import java.util.List;

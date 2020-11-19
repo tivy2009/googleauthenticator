@@ -1,9 +1,9 @@
-package com.phy.framework.googleauthenticator.service;
+package com.hunter.framework.googleauthenticator.service;
 
 import com.github.pagehelper.Page;
 import com.github.pagehelper.PageHelper;
-import com.phy.framework.googleauthenticator.mapper.GoogleSecretMapper;
-import com.phy.framework.googleauthenticator.pojo.GoogleSecret;
+import com.hunter.framework.googleauthenticator.mapper.GoogleSecretMapper;
+import com.hunter.framework.googleauthenticator.pojo.GoogleSecret;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;

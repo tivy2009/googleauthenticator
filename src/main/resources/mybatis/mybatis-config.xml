@@ -4,7 +4,7 @@
         "http://mybatis.org/dtd/mybatis-3-config.dtd">
 <configuration>
     <typeAliases>
-        <package name="com.phy.framework.googleauthenticator.pojo"/>
+        <package name="com.hunter.framework.googleauthenticator.pojo"/>
     </typeAliases>
     <!--<mappers>-->
     <!--<mapper resource="sample/mybatis/mapper/CityMapper.xml"/>-->

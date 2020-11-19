@@ -26,7 +26,7 @@ spring:
 
 #\u914D\u7F6EMyBatis
 mybatis:
-  type-aliases-package: com.phy.framework.googleauthenticator.pojo
+  type-aliases-package: com.hunter.framework.googleauthenticator.pojo
   config-location: classpath:mybatis/mybatis-config.xml
   mapper-locations: classpath:mybatis/*Mapper.xml
 
@@ -41,4 +41,4 @@ pagehelper:
 # 打印sql
 logging:
   level:
-    com.phy.framework.googleauthenticator.mapper: debug
+    com.hunter.framework.googleauthenticator.mapper: debug

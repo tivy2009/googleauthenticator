@@ -1,6 +1,6 @@
-package com.phy.framework.googleauthenticator.service;
+package com.hunter.framework.googleauthenticator.service;
 
-import com.phy.framework.googleauthenticator.pojo.GoogleSecret;
+import com.hunter.framework.googleauthenticator.pojo.GoogleSecret;
 import org.springframework.stereotype.Component;
 
 import java.util.List;

@@ -1,4 +1,4 @@
-package com.phy.framework.googleauthenticator.authenticator;
+package com.hunter.framework.googleauthenticator.authenticator;
 import java.security.InvalidKeyException;
 import java.security.NoSuchAlgorithmException;
 import java.security.SecureRandom;
