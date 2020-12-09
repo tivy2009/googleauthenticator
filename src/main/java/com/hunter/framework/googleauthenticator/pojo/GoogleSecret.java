@@ -17,17 +17,17 @@ public class GoogleSecret implements Serializable{
 
     private String account;
 
-    private String issuer;
+    private String productNo;
 
     private String secret;
 
     private int status;
 
     @JsonFormat(pattern="yyyy-MM-dd HH:mm:ss")
-    private Date createtime;
+    private Date createTime;
 
     @JsonFormat(pattern="yyyy-MM-dd HH:mm:ss")
-    private Date updatetime;
+    private Date updateTime;
 
     public String getId() {
         return id;
@@ -45,12 +45,12 @@ public class GoogleSecret implements Serializable{
         this.account = account;
     }
 
-    public String getIssuer() {
-        return issuer;
+    public String getProductNo() {
+        return productNo;
     }
 
-    public void setIssuer(String issuer) {
-        this.issuer = issuer;
+    public void setProductNo(String productNo) {
+        this.productNo = productNo;
     }
 
     public String getSecret() {
@@ -69,19 +69,19 @@ public class GoogleSecret implements Serializable{
         this.status = status;
     }
 
-    public Date getCreatetime() {
-        return createtime;
+    public Date getCreateTime() {
+        return createTime;
     }
 
-    public void setCreatetime(Date createtime) {
-        this.createtime = createtime;
+    public void setCreateTime(Date createTime) {
+        this.createTime = createTime;
     }
 
-    public Date getUpdatetime() {
-        return updatetime;
+    public Date getUpdateTime() {
+        return updateTime;
     }
 
-    public void setUpdatetime(Date updatetime) {
-        this.updatetime = updatetime;
+    public void setUpdateTime(Date updateTime) {
+        this.updateTime = updateTime;
     }
 }

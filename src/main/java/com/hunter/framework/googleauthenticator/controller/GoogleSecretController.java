@@ -51,7 +51,7 @@ public class GoogleSecretController {
         ModelAndView modelAndView= new ModelAndView("redirect:/list");
         if(googleSecret != null
                 && googleSecret.getAccount() != null && googleSecret.getAccount().length() >0
-                && googleSecret.getIssuer() != null && googleSecret.getIssuer().length() >0)
+                && googleSecret.getProductNo() != null && googleSecret.getProductNo().length() >0)
         {
             String secret = GoogleAuthenticator.generateSecretKey();
             googleSecret.setSecret(secret);
@@ -85,8 +85,8 @@ public class GoogleSecretController {
             if(googleSecret != null){
                 String secret = googleSecret.getSecret();
                 String account = googleSecret.getAccount();
-                String issuer = googleSecret.getIssuer();
-                String content = QRCodeUtil.createGoogleAuthQRCodeData(secret,account,issuer);
+                String productNo = googleSecret.getProductNo();
+                String content = QRCodeUtil.createGoogleAuthQRCodeData(secret,account,productNo);
                 try{
                     QRCodeUtil.writeToStream(content,response.getOutputStream(),300,300);
                     return;

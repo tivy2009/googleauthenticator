@@ -9,10 +9,10 @@
 
 <div th:object="${googleSecret}">
     <p>Account:<span th:text="*{account}"></span></p>
-    <p>Issuer:<span th:text="*{issuer}"></span></p>
+    <p>ProductNo:<span th:text="*{productNo}"></span></p>
     <p>Status:<span th:text="*{status}"></span></p>
-    <p>CreateTime:<span th:text="*{#dates.format(createtime,'yyyy-MM-dd HH:mm:ss')}"></span></p>
-    <p>UpdateTime:<span th:text="*{#dates.format(updatetime,'yyyy-MM-dd HH:mm:ss')}"></span></p>
+    <p>CreateTime:<span th:text="*{#dates.format(createTime,'yyyy-MM-dd HH:mm:ss')}"></span></p>
+    <p>UpdateTime:<span th:text="*{#dates.format(updateTime,'yyyy-MM-dd HH:mm:ss')}"></span></p>
     <p>SecretCode:<span th:text="*{secret}"></span></p>
 </div>
 <div>

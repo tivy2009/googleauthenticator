@@ -22,10 +22,10 @@
     </tr>
     <tr th:each = "item,itemStat : ${list}" >
         <td th:text="${item.account}"></td>
-        <td th:text="${item.issuer}"></td>
+        <td th:text="${item.productNo}"></td>
         <th th:text="${item.status}"></th>
-        <th th:text="${#dates.format(item.createtime,'yyyy-MM-dd HH:mm:ss')}"></th>
-        <th th:text="${#dates.format(item.updatetime,'yyyy-MM-dd HH:mm:ss')}"></th>
+        <th th:text="${#dates.format(item.createTime,'yyyy-MM-dd HH:mm:ss')}"></th>
+        <th th:text="${#dates.format(item.updateTime,'yyyy-MM-dd HH:mm:ss')}"></th>
         <th>
             <a th:href="@{/qrCode/{id}(id=${item.id})}">二维码</a>
             <a href="javascript:void(0)" th:onclick="googleSecret([[${item.id}]]);">验证Code</a>
